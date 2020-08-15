@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>RailsMisterCocktail</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <title>Welcome to Mister Cocktail</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="tTtZ/NDYVOnAxiI/f5gitOeRG76r5fwKYHhWwdtBzjde5IyYPjYJ+6e+8g3wzZEeCkU4+dS8e4QAoJhtmy/jpg==">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="/assets/application-6502403468dfbc20a08319e14cf02150d3c5cadebcd825473006e83ddf10c24e.css" data-turbolinks-track="reload">
+    <script src="/assets/application-dcfb333542166c7e176ac13945f5c27350627b932d212a870a5a112daf6d4db9.js" data-turbolinks-track="reload"></script>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Cocktails</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ml-auto flex">
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search" value="">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+          <a class="btn btn-outline-primary my-2 my-sm-0 ml-2" href="/cocktails/new">Add a cocktail</a>
+        </div>
+      </div>
+    </nav>
   </head>
+
 
   <body>
     <%= yield %>
   </body>
 </html>
+
+
