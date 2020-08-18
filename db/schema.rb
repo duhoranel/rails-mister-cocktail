@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_08_15_182737) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "cocktail_id", null: false
-    t.bigint "ingredient_id", null: false
+    t.index ["cocktail_id"], name: "index_doses_on_cocktail_id"
   end
 
   create_table "ingredients", force: :cascade do |t|
