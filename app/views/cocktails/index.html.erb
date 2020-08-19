@@ -7,30 +7,12 @@
         <% @cocktails.each do |cocktail| %>
         <h4> <%= cocktail.name %> </h4>
         <p>Lorem ipsum dolor sit amet.</p>
-        <% end %>
-      </div>
-
-      <div class="card">
-
-        <% @cocktails.each do |cocktail| %>
-        <h4> <%= cocktail.name %> </h4>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <% end %>
-      </div>
-
-      <div class="card">
-
-        <% @cocktails.each do |cocktail| %>
-        <h4> <%= cocktail.name %> </h4>
-
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p><%= link_to "More details", cocktail_path(cocktail) %></p>
         <% end %>
       </div>
 
     </div>
   </div>
 </body>
-
-
 
 
