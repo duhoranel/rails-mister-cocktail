@@ -1,13 +1,15 @@
 <div class="container">
-  <h2 class="text-center">Welcome to your Mister Cocktail</h2>
+  <h2 class="text-center">Bonjour, bébé. Welcome to your Mister Cocktail</h2>
 
-
+  <p></p>
   <div class="cards">
-    <div class="card-category">
-      <% @cocktails.each do |cocktail| %>
-      <h2> <%= cocktail.name %> </h2>
-      <p><%= link_to "More details", cocktail_path(cocktail) %></p>
-      <% end %>
-    </div>
+    <% @cocktails.each do |cocktail|  %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('x')">
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+
+        </div>
+    <% end %>
   </div>
 </div>
+
+
